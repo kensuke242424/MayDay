@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var isAnimation = false
+    @State var isAnimation = false   // 回転アニメーション
+    @State private var modalView: Bool = false  // モーダル遷移画面
     
     var body: some View {
         
@@ -18,6 +19,8 @@ struct ContentView: View {
                 Image("star2")
                     .resizable()
                     .clipShape(Circle())
+                    .ignoresSafeArea()
+                //                    .frame(maxWidth: .infinity, maxHeight: .infinity)
                 
                 
                 
@@ -52,9 +55,9 @@ struct ContentView: View {
             ZStack {
                 // 図形「四角」を表示
                 RoundedRectangle(cornerRadius: 40)
-                    .fill(Color.black)
+                    .fill(Color.black.opacity(0.7))
                     .frame(width:290, height: 70)
-                    .offset(x: 0, y: -30)
+                //                    .offset(x: 0, y: -30)
                 
                 
                 // 影をつける
@@ -63,22 +66,46 @@ struct ContentView: View {
                 
                 HStack(spacing: 40) {    // spacingにより間隔をあける
                     
-                    Image(systemName: "pencil")
-                        .foregroundColor(Color.white)
-                        .offset(x: 0, y: -30)
+                    Button(action: {
+                        print("タップされました")
+                        
+                    }) {
+                        Image(systemName: "pencil")
+                            .foregroundColor(Color.white)
+                        
+                    }
                     
-                    Image(systemName: "message")
-                        .foregroundColor(Color.white)
-                        .offset(x: 0, y: -30)
-                    Image(systemName: "gearshape.fill")
-                        .foregroundColor(Color.white)
-                        .offset(x: 0, y: -30)
+                    Button(action: {
+                        print("タップされました")
+                        
+                    }) {
+                        Image(systemName: "message")
+                            .foregroundColor(Color.white)
+                    }
+                    
+                    Button(action: {
+                        self.modalView = true
+                    }) {
+                        Image(systemName: "gearshape.fill")
+                            .foregroundColor(Color.white)
+                    }.sheet(isPresented: self.$modalView) {
+                        HStack {
+                            Text("モーダルビュー")
+                        }
+                    }  // .sheet
                     
                 } // HStack
             } // ZStack
         }//VStack
     }// ZStack
 }// ContentView
+
+struct ModalView: View {
+    
+    var body: some View{
+        Text("モーダル遷移画面")
+    }
+}
 
 
 struct ContentView_Previews: PreviewProvider {
