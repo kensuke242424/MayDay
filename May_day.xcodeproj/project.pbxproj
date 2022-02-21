@@ -11,6 +11,7 @@
 		E0AB73FF27C32620002466E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AB73FE27C32620002466E9 /* ContentView.swift */; };
 		E0AB740127C32622002466E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0AB740027C32622002466E9 /* Assets.xcassets */; };
 		E0AB740427C32622002466E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0AB740327C32622002466E9 /* Preview Assets.xcassets */; };
+		E0AB740D27C346CE002466E9 /* meydayMein.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AB740C27C346CE002466E9 /* meydayMein.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		E0AB73FE27C32620002466E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E0AB740027C32622002466E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0AB740327C32622002466E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E0AB740C27C346CE002466E9 /* meydayMein.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = meydayMein.png; path = ../../../Downloads/meydayMein.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 				E0AB73FC27C32620002466E9 /* May_dayApp.swift */,
 				E0AB73FE27C32620002466E9 /* ContentView.swift */,
 				E0AB740027C32622002466E9 /* Assets.xcassets */,
+				E0AB740C27C346CE002466E9 /* meydayMein.png */,
 				E0AB740227C32622002466E9 /* Preview Content */,
 			);
 			path = May_day;
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0AB740427C32622002466E9 /* Preview Assets.xcassets in Resources */,
+				E0AB740D27C346CE002466E9 /* meydayMein.png in Resources */,
 				E0AB740127C32622002466E9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
