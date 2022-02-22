@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct ModalView: View {
+struct SystemModalView: View {
     var body: some View {
-        Text("モーダルビューが表示されています")
+        Text("システムモーダルビュー")
     }
 }
 
-struct ModalView_Previews: PreviewProvider {
+struct SystemModalView_Previews: PreviewProvider {
     static var previews: some View {
-        ModalView()
+        SystemModalView()
     }
 }
