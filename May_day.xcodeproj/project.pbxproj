@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E03996C727C4A62600F896F1 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03996C627C4A62600F896F1 /* ModalView.swift */; };
 		E0AB73FD27C32620002466E9 /* May_dayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AB73FC27C32620002466E9 /* May_dayApp.swift */; };
 		E0AB73FF27C32620002466E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AB73FE27C32620002466E9 /* ContentView.swift */; };
 		E0AB740127C32622002466E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0AB740027C32622002466E9 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E03996C627C4A62600F896F1 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		E0AB73F927C32620002466E9 /* May_day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = May_day.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0AB73FC27C32620002466E9 /* May_dayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = May_dayApp.swift; sourceTree = "<group>"; };
 		E0AB73FE27C32620002466E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				E0AB73FC27C32620002466E9 /* May_dayApp.swift */,
+				E03996C627C4A62600F896F1 /* ModalView.swift */,
 				E0AB73FE27C32620002466E9 /* ContentView.swift */,
 				E0AB740027C32622002466E9 /* Assets.xcassets */,
 				E0AB740C27C346CE002466E9 /* meydayMein.png */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E03996C727C4A62600F896F1 /* ModalView.swift in Sources */,
 				E0AB73FF27C32620002466E9 /* ContentView.swift in Sources */,
 				E0AB73FD27C32620002466E9 /* May_dayApp.swift in Sources */,
 			);

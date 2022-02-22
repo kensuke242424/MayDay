@@ -11,6 +11,7 @@ struct ContentView: View {
     
     @State var isAnimation = false   // 回転アニメーション
     @State private var modalView: Bool = false  // モーダル遷移画面
+    @State private var opacity = 1.0
     
     var body: some View {
         
@@ -37,7 +38,7 @@ struct ContentView: View {
                     }
                 // セーフティエリアいっぱいまで
                     .edgesIgnoringSafeArea(.all)
-                    .offset(x: 0, y: -100)
+                    .offset(x: 0, y: -110)
                 
                 
                 Image("grass2")
@@ -90,7 +91,12 @@ struct ContentView: View {
                             .foregroundColor(Color.white)
                     }.sheet(isPresented: self.$modalView) {
                         HStack {
-                            Text("モーダルビュー")
+                            Color.black       // モーダル遷移画面は透過できない？？
+                                .ignoresSafeArea()
+                                
+                            
+                            
+                            
                         }
                     }  // .sheet
                     
@@ -99,13 +105,6 @@ struct ContentView: View {
         }//VStack
     }// ZStack
 }// ContentView
-
-struct ModalView: View {
-    
-    var body: some View{
-        Text("モーダル遷移画面")
-    }
-}
 
 
 struct ContentView_Previews: PreviewProvider {
