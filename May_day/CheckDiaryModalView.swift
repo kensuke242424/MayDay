@@ -10,9 +10,10 @@ import SwiftUI
 struct CheckDiaryModalView: View {
     var body: some View {
         
-        Text("チェックダイアリーモーダルビュー")
         
-    }
+            Text("a")
+           
+        }
     
 }
 

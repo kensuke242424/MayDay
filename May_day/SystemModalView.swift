@@ -9,7 +9,10 @@ import SwiftUI
 
 struct SystemModalView: View {
     var body: some View {
-        Text("システムモーダルビュー")
+        List {
+            Text("システムモーダルビュー")
+        }
+        
     }
 }
 

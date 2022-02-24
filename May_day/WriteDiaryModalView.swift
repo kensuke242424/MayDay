@@ -9,7 +9,22 @@ import SwiftUI
 
 struct WriteDiaryModalView: View {
     var body: some View {
-        Text("ライトダイアリーモーダルビュー")
+       
+        TabView {
+            MyWriteDiaryTabView()
+            
+            .tabItem {
+                    Image(systemName: "pencil.slash")
+                Text("FirstView")
+                }
+            
+            MyFavoriteDiaryTabView()
+                .tabItem {
+                    Image(systemName: "suit.heart.fill")
+                    Text("FirstView")
+                }
+            
+        }
     }
 }
 
