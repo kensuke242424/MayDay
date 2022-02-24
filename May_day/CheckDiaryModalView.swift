@@ -11,7 +11,7 @@ struct CheckDiaryModalView: View {
     var body: some View {
         
         
-            Text("a")
+            Text("abc")
            
         }
     
