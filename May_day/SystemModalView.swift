@@ -9,15 +9,31 @@ import SwiftUI
 
 struct SystemModalView: View {
     var body: some View {
-        List {
-            Text("システムモーダルビュー")
+        VStack(alignment: .leading) {
+            Text("システム設定")
+                .font(.title)
+                .bold()
+                .padding([.leading, .trailing, .top], 25)
+            VStack {
+                
+                List {
+                    
+                    Text("システム１")
+                    Text("システム２")
+                    Text("システム３")
+                    Text("システム４")
+                    Text("システム５")
+                    Text("システム6")
+                    Text("システム７")
+                    
+                }
+            }
+            
         }
-        
     }
 }
-
-struct SystemModalView_Previews: PreviewProvider {
-    static var previews: some View {
-        SystemModalView()
+    struct SystemModalView_Previews: PreviewProvider {
+        static var previews: some View {
+            SystemModalView()
+        }
     }
-}

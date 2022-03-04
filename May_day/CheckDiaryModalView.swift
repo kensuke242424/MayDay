@@ -9,12 +9,43 @@ import SwiftUI
 
 struct CheckDiaryModalView: View {
     var body: some View {
-        
-        
-            Text("abc")
-           
+        VStack(alignment: .leading) {
+            
+            HStack {
+                Text("日記")
+                    .font(.title)
+                    .bold()
+                    .padding([.leading, .trailing, .top], 25)
+                
+                Spacer().frame(width: 210)
+                
+                Image(systemName: "calendar")
+                    .imageScale(.large)
+                    .padding([.leading, .trailing, .top], 25)
+                    .frame(width: 40, height: 40)
+            } // HStack
+            
+            NavigationView {
+                
+                TabView {
+                    
+                    
+                    MyWriteDiaryTabView()
+                    
+                        .tabItem {
+                            Image(systemName: "pencil.slash")
+                            Text("FirstView")
+                        }
+                    
+                    MyFavoriteDiaryTabView()
+                        .tabItem {
+                            Image(systemName: "suit.heart.fill")
+                            Text("FirstView")
+                        }
+                }
+            }
         }
-    
+    }
 }
 
 struct CheckDiaryModalView_Previews: PreviewProvider {

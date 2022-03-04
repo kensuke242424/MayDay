@@ -10,7 +10,7 @@
 		E035554027C5F3F900D4521E /* MyWriteDiaryTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E035553F27C5F3F900D4521E /* MyWriteDiaryTabView.swift */; };
 		E035554227C5F47500D4521E /* MyFavoriteDiaryTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E035554127C5F47500D4521E /* MyFavoriteDiaryTabView.swift */; };
 		E03996C727C4A62600F896F1 /* SystemModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03996C627C4A62600F896F1 /* SystemModalView.swift */; };
-		E03996C927C4D3E600F896F1 /* WriteDiaryModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03996C827C4D3E600F896F1 /* WriteDiaryModalView.swift */; };
+		E03996C927C4D3E600F896F1 /* MusicModallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03996C827C4D3E600F896F1 /* MusicModallView.swift */; };
 		E03996CB27C4D42A00F896F1 /* CheckDiaryModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03996CA27C4D42A00F896F1 /* CheckDiaryModalView.swift */; };
 		E0AB73FD27C32620002466E9 /* May_dayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AB73FC27C32620002466E9 /* May_dayApp.swift */; };
 		E0AB73FF27C32620002466E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AB73FE27C32620002466E9 /* ContentView.swift */; };
@@ -24,7 +24,7 @@
 		E035553F27C5F3F900D4521E /* MyWriteDiaryTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWriteDiaryTabView.swift; sourceTree = "<group>"; };
 		E035554127C5F47500D4521E /* MyFavoriteDiaryTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavoriteDiaryTabView.swift; sourceTree = "<group>"; };
 		E03996C627C4A62600F896F1 /* SystemModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemModalView.swift; sourceTree = "<group>"; };
-		E03996C827C4D3E600F896F1 /* WriteDiaryModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteDiaryModalView.swift; sourceTree = "<group>"; };
+		E03996C827C4D3E600F896F1 /* MusicModallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModallView.swift; sourceTree = "<group>"; };
 		E03996CA27C4D42A00F896F1 /* CheckDiaryModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckDiaryModalView.swift; sourceTree = "<group>"; };
 		E0AB73F927C32620002466E9 /* May_day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = May_day.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0AB73FC27C32620002466E9 /* May_dayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = May_dayApp.swift; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 				E03996CA27C4D42A00F896F1 /* CheckDiaryModalView.swift */,
 				E035553F27C5F3F900D4521E /* MyWriteDiaryTabView.swift */,
 				E035554127C5F47500D4521E /* MyFavoriteDiaryTabView.swift */,
-				E03996C827C4D3E600F896F1 /* WriteDiaryModalView.swift */,
+				E03996C827C4D3E600F896F1 /* MusicModallView.swift */,
 				E0E1D7F927C757F6009318E8 /* MutteringDiaryView.swift */,
 				E0AB740027C32622002466E9 /* Assets.xcassets */,
 				E0AB740C27C346CE002466E9 /* meydayMein.png */,
@@ -163,7 +163,7 @@
 				E03996C727C4A62600F896F1 /* SystemModalView.swift in Sources */,
 				E0AB73FF27C32620002466E9 /* ContentView.swift in Sources */,
 				E035554227C5F47500D4521E /* MyFavoriteDiaryTabView.swift in Sources */,
-				E03996C927C4D3E600F896F1 /* WriteDiaryModalView.swift in Sources */,
+				E03996C927C4D3E600F896F1 /* MusicModallView.swift in Sources */,
 				E0AB73FD27C32620002466E9 /* May_dayApp.swift in Sources */,
 				E0E1D7FA27C757F6009318E8 /* MutteringDiaryView.swift in Sources */,
 				E03996CB27C4D42A00F896F1 /* CheckDiaryModalView.swift in Sources */,

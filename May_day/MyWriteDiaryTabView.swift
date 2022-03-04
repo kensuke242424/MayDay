@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MyWriteDiaryTabView: View {
     var body: some View {
-       Text("MyWriteDiaryTabView")
+       Text("自分が今まで書いた日記")
     }
 }
 

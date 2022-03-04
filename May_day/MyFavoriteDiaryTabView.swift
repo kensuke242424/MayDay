@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MyFavoriteDiaryTabView: View {
     var body: some View {
-        Text("MyFavoriteDiaryTabView")
+        Text("お気に入りをつけた誰かの日記")
     }
 }
 

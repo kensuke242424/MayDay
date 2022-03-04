@@ -33,12 +33,12 @@ struct ContentView: View {
                 .onAppear() {
                     withAnimation(
                         Animation
-                            .linear(duration: 550)
+                            .linear(duration:800)
                             .repeatForever(autoreverses: false)) {
                                 self.isAnimation.toggle()
                                 
                             }
-                }
+                }  // onApperここまで
             // セーフティエリアいっぱいまで
                 .edgesIgnoringSafeArea(.all)
                 .offset(x: 0, y: -600)
@@ -54,7 +54,7 @@ struct ContentView: View {
                         .resizable()
                         .clipShape(Circle())
                     // offset そこまでの結果の表示位置を調整
-                        .offset(x: 0, y: 470)
+                        .offset(x: 0, y: 510)
                     // 縦横比を維持しながらフレームをちょうど埋め尽くすサイズにする
                         .scaledToFill()
                         .shadow(color: .white, radius: 20, x: 4, y: 4)
@@ -66,7 +66,7 @@ struct ContentView: View {
                             self.isModalActive3.toggle()  // toggle()は、Bool値の反転を指す
                             print("WriteDiaryModalView")
                         }) {
-                            Image(systemName: "text.bubble.fill")    //つぶやくボタン
+                            Image(systemName: "rectangle.and.pencil.and.ellipsis")    //つぶやくボタン
                                 .resizable()   // ボタン画像を大きくする
                                 .foregroundColor(Color.white)
                                 .frame(width: 50, height: 40)
@@ -97,16 +97,16 @@ struct ContentView: View {
                                 
                                 Button(action: {
                                     self.isModalActive0.toggle()  // toggle()は、Bool値の反転を指す
-                                    print("WriteDiaryModalView")
+                                    print("MusicModalView")
                                 }) {
                                     
-                                    Image(systemName: "highlighter")
+                                    Image(systemName: "airpodsmax")
                                         .imageScale(.large)     // ボタン画像を大きくする
                                         .foregroundColor(Color.white)
                                         .frame(width: 40, height: 40)
                                 }
                                 .sheet(isPresented: self.$isModalActive0) {    //
-                                    WriteDiaryModalView()                   // WriteDiaryModalView.swift画面を呼び出して表示
+                                    MusicModalView()                   // WriteDiaryModalView.swift画面を呼び出して表示
                                     
                                 }
                                 
