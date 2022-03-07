@@ -7,9 +7,25 @@
 
 import SwiftUI
 
+
+
 struct MutteringDiaryView: View {
+    
+    @State var text: String = ""
+    
     var body: some View {
-        Text("今から書く日記")
+        
+        VStack(alignment: .leading) {
+            
+        
+        TextField("今日はどんな日？", text: $text)
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+//            .padding(30)
+            .keyboardType(.asciiCapable)
+            .border(Color(UIColor.separator))
+            .background(Color(red: 0, green: 0, blue: 0, opacity: 0.1))
+            .frame(width: 300)
+        }
     }
 }
 
