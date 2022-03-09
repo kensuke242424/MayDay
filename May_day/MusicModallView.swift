@@ -9,8 +9,41 @@ import SwiftUI
 
 struct MusicModalView: View {
     var body: some View {
-       
-        Text("ミュージック")
+        VStack(alignment: .leading) {
+            Text("BGM設定")
+                .font(.largeTitle)
+                .bold()
+                .padding([.leading, .trailing, .top], 25)
+            VStack {
+                
+                
+                
+                List {
+                    
+                    Text("音楽")
+                        .font(.title)
+                        .bold()
+                        .padding()
+                    
+                    Text("音楽１")
+                    Text("音楽２")
+                    Text("音楽３")
+                    
+                }
+                
+                List {
+                    
+                    Text("環境音")
+                        .font(.title)
+                        .bold()
+                        .padding()
+                    
+                    Text("焚き火")
+                    
+                }
+            }
+            
+        }
     }
 }
 

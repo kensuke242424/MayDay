@@ -112,7 +112,7 @@ struct ContentView: View {
                                 
                                 Button(action: {
                                     self.isModalActive1.toggle()  // toggle()は、Bool値の反転を指す
-                                    print("CheckiaryModalView")
+                                    print("CheckDiaryModalView")
                                     
                                 }) {
                                     
