@@ -8,7 +8,13 @@
 import SwiftUI
 
 struct MusicModalView: View {
+    
+    let musicplayer = SoundPlayer()
+    
+    
+    
     var body: some View {
+        
         VStack(alignment: .leading) {
             Text("BGM設定")
                 .font(.largeTitle)
@@ -25,9 +31,31 @@ struct MusicModalView: View {
                         .bold()
                         .padding()
                     
-                    Text("音楽１")
-                    Text("音楽２")
-                    Text("音楽３")
+                    
+                    Button(action:{
+                        
+                        musicplayer.musicPlayer1()
+                        
+                        
+                        
+                    }) {
+                        Text("音楽1")
+                            
+                    }
+                    
+                    Button(action:{
+                        musicplayer.musicPlayer2()
+                        
+                        
+                    }) {
+                        Text("音楽2")
+                    }
+                    
+                    Button(action:{
+                        musicplayer.musicPlayer3()
+                    }) {
+                        Text("音楽3")
+                    }
                     
                 }
                 
@@ -38,7 +66,9 @@ struct MusicModalView: View {
                         .bold()
                         .padding()
                     
-                    Text("焚き火")
+                    Button(action:{}) {
+                        Text("焚き火")
+                    }
                     
                 }
             }
