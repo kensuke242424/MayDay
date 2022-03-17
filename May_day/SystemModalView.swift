@@ -3,7 +3,8 @@
 //  May_day
 //
 //  Created by 中川賢亮 on 2022/02/22.
-//
+
+//UserDefaultsを使ってデータの状態管理を行おうか？
 
 import SwiftUI
 

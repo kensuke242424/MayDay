@@ -12,6 +12,7 @@
 		E03996C727C4A62600F896F1 /* SystemModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03996C627C4A62600F896F1 /* SystemModalView.swift */; };
 		E03996C927C4D3E600F896F1 /* MusicModallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03996C827C4D3E600F896F1 /* MusicModallView.swift */; };
 		E03996CB27C4D42A00F896F1 /* CheckDiaryModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03996CA27C4D42A00F896F1 /* CheckDiaryModalView.swift */; };
+		E059043B27E383A7001D1318 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E059043A27E38145001D1318 /* Home.swift */; };
 		E0682B7727D917ED006E8B2E /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0682B7627D917ED006E8B2E /* SoundPlayer.swift */; };
 		E0AB73FD27C32620002466E9 /* May_dayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AB73FC27C32620002466E9 /* May_dayApp.swift */; };
 		E0AB73FF27C32620002466E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AB73FE27C32620002466E9 /* ContentView.swift */; };
@@ -27,6 +28,7 @@
 		E03996C627C4A62600F896F1 /* SystemModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemModalView.swift; sourceTree = "<group>"; };
 		E03996C827C4D3E600F896F1 /* MusicModallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModallView.swift; sourceTree = "<group>"; };
 		E03996CA27C4D42A00F896F1 /* CheckDiaryModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckDiaryModalView.swift; sourceTree = "<group>"; };
+		E059043A27E38145001D1318 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		E0682B7627D917ED006E8B2E /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		E0682B7827DA61A8006E8B2E /* May-day-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "May-day-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E0AB73F927C32620002466E9 /* May_day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = May_day.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,10 +51,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E059043727E380D4001D1318 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E059043A27E38145001D1318 /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E059043827E380E0001D1318 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E059043927E380F9001D1318 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		E0AB73F027C32620002466E9 = {
 			isa = PBXGroup;
 			children = (
-				E0682B7627D917ED006E8B2E /* SoundPlayer.swift */,
+				E0682B7827DA61A8006E8B2E /* May-day-Info.plist */,
 				E0AB73FB27C32620002466E9 /* May_day */,
 				E0AB73FA27C32620002466E9 /* Products */,
 			);
@@ -69,7 +93,9 @@
 		E0AB73FB27C32620002466E9 /* May_day */ = {
 			isa = PBXGroup;
 			children = (
-				E0682B7827DA61A8006E8B2E /* May-day-Info.plist */,
+				E059043927E380F9001D1318 /* ViewModel */,
+				E059043827E380E0001D1318 /* Model */,
+				E059043727E380D4001D1318 /* View */,
 				E0AB73FC27C32620002466E9 /* May_dayApp.swift */,
 				E0AB73FE27C32620002466E9 /* ContentView.swift */,
 				E03996C627C4A62600F896F1 /* SystemModalView.swift */,
@@ -78,6 +104,7 @@
 				E035554127C5F47500D4521E /* MyFavoriteDiaryTabView.swift */,
 				E03996C827C4D3E600F896F1 /* MusicModallView.swift */,
 				E0E1D7F927C757F6009318E8 /* MutteringDiaryView.swift */,
+				E0682B7627D917ED006E8B2E /* SoundPlayer.swift */,
 				E0AB740027C32622002466E9 /* Assets.xcassets */,
 				E0AB740C27C346CE002466E9 /* meydayMein.png */,
 				E0AB740227C32622002466E9 /* Preview Content */,
@@ -166,6 +193,7 @@
 			files = (
 				E035554027C5F3F900D4521E /* MyWriteDiaryTabView.swift in Sources */,
 				E03996C727C4A62600F896F1 /* SystemModalView.swift in Sources */,
+				E059043B27E383A7001D1318 /* Home.swift in Sources */,
 				E0AB73FF27C32620002466E9 /* ContentView.swift in Sources */,
 				E035554227C5F47500D4521E /* MyFavoriteDiaryTabView.swift in Sources */,
 				E0682B7727D917ED006E8B2E /* SoundPlayer.swift in Sources */,
