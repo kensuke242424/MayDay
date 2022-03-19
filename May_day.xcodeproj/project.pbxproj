@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16419C494C9BD83DF0EA98FF /* Pods_May_day.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBB8AAFF8DAD9E592E7B2DF /* Pods_May_day.framework */; };
 		E035554027C5F3F900D4521E /* MyWriteDiaryTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E035553F27C5F3F900D4521E /* MyWriteDiaryTabView.swift */; };
 		E035554227C5F47500D4521E /* MyFavoriteDiaryTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E035554127C5F47500D4521E /* MyFavoriteDiaryTabView.swift */; };
 		E03996C727C4A62600F896F1 /* SystemModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03996C627C4A62600F896F1 /* SystemModalView.swift */; };
@@ -23,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		70344324C96818B9F30DD445 /* Pods-May_day.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-May_day.release.xcconfig"; path = "Target Support Files/Pods-May_day/Pods-May_day.release.xcconfig"; sourceTree = "<group>"; };
+		C62FF2F3306E518E050E5549 /* Pods-May_day.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-May_day.debug.xcconfig"; path = "Target Support Files/Pods-May_day/Pods-May_day.debug.xcconfig"; sourceTree = "<group>"; };
+		CDBB8AAFF8DAD9E592E7B2DF /* Pods_May_day.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_May_day.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E035553F27C5F3F900D4521E /* MyWriteDiaryTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWriteDiaryTabView.swift; sourceTree = "<group>"; };
 		E035554127C5F47500D4521E /* MyFavoriteDiaryTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavoriteDiaryTabView.swift; sourceTree = "<group>"; };
 		E03996C627C4A62600F896F1 /* SystemModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemModalView.swift; sourceTree = "<group>"; };
@@ -45,12 +49,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16419C494C9BD83DF0EA98FF /* Pods_May_day.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17DD01C558080DF0CC5FD431 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDBB8AAFF8DAD9E592E7B2DF /* Pods_May_day.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5DC0800502C0EDE60BD8069 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C62FF2F3306E518E050E5549 /* Pods-May_day.debug.xcconfig */,
+				70344324C96818B9F30DD445 /* Pods-May_day.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E059043727E380D4001D1318 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +102,8 @@
 				E0682B7827DA61A8006E8B2E /* May-day-Info.plist */,
 				E0AB73FB27C32620002466E9 /* May_day */,
 				E0AB73FA27C32620002466E9 /* Products */,
+				D5DC0800502C0EDE60BD8069 /* Pods */,
+				17DD01C558080DF0CC5FD431 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,9 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0AB740727C32622002466E9 /* Build configuration list for PBXNativeTarget "May_day" */;
 			buildPhases = (
+				9C8241E902A63D093883C117 /* [CP] Check Pods Manifest.lock */,
 				E0AB73F527C32620002466E9 /* Sources */,
 				E0AB73F627C32620002466E9 /* Frameworks */,
 				E0AB73F727C32620002466E9 /* Resources */,
+				3A7107665950D911B78D64C5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,6 +191,9 @@
 				Base,
 			);
 			mainGroup = E0AB73F027C32620002466E9;
+			packageReferences = (
+				E059043C27E5E49D001D1318 /* XCRemoteSwiftPackageReference "MayDay.git" */,
+			);
 			productRefGroup = E0AB73FA27C32620002466E9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -185,6 +215,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A7107665950D911B78D64C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-May_day/Pods-May_day-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-May_day/Pods-May_day-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-May_day/Pods-May_day-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C8241E902A63D093883C117 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-May_day-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E0AB73F527C32620002466E9 /* Sources */ = {
@@ -325,6 +397,7 @@
 		};
 		E0AB740827C32622002466E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C62FF2F3306E518E050E5549 /* Pods-May_day.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -355,6 +428,7 @@
 		};
 		E0AB740927C32622002466E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70344324C96818B9F30DD445 /* Pods-May_day.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -405,6 +479,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E059043C27E5E49D001D1318 /* XCRemoteSwiftPackageReference "MayDay.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kensuke242424/MayDay.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = E0AB73F127C32620002466E9 /* Project object */;
 }
